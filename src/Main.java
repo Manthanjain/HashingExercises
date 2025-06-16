@@ -6,7 +6,15 @@ public class Main {
     public static void main(String[] args) {
         HashSet<Employee> set = new HashSet<>();
         set.add(new Employee(1, "Manthan"));
-        set.add(new Employee(2, "Manthan"));
+        set.add(new Employee(1, "Manthan"));
         System.out.println(set.size());
+
+        Records records = new Records(2,3);
+        System.out.println(records.x());
+        System.out.println(records.y());
+
+        EmployeeRecord employeeRecord = new EmployeeRecord(1,"Manthan","Jain");
+        String ans = employeeRecord.getEmployeeToken();
+        System.out.println(ans);
     }
 }
