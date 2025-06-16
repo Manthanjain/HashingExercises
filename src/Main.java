@@ -14,7 +14,10 @@ public class Main {
         System.out.println(records.y());
 
         EmployeeRecord employeeRecord = new EmployeeRecord(1,"Manthan","Jain");
-        String ans = employeeRecord.getEmployeeToken();
-        System.out.println(ans);
+        EmployeeRecord employeeRecords = new EmployeeRecord(1,"Manthan","Jain");
+        HashSet<EmployeeRecord> recordSet = new HashSet<>();
+        recordSet.add(employeeRecord);
+        recordSet.add(employeeRecords);
+        System.out.println(recordSet);
     }
 }
